@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {axiosWithAuth} from '../Util/axiosWithAuth';
-import { useParams } from "react-router-dom";
+
 
 
 const initialColor = {
