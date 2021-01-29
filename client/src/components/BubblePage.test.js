@@ -3,5 +3,9 @@ import { render, screen } from "@testing-library/react";
 import BubblePage from "./BubblePage";
 
 test("Fetches data and renders the bubbles", () => {
-  // Finish this test
+  render(<BubblePage colorList={true}/>)
+
+  const color = screen.queryByText(/colors/i)
+
+  expect(color).not.toBeNull()
 });
